@@ -2,15 +2,13 @@
   "name": "@solarcommerce/config",
   "version": "0.0.1",
   "description": "Solar Commerce config for different tools",
-  "main": "dist/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "prettier.js",
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "ssh://git@git.jetbrains.space/solarcommerce/main/config.git"
   },
   "keywords": [],
-  "author": "Jacek Nowak",
+  "author": "Solar Commerce",
   "license": "ISC"
 }

@@ -1,16 +1,14 @@
-const prettierConfig = {
+module.exports = {
   printWidth: 120,
-  tabWidth: 2,
+  tabWidth: 4,
   useTabs: false,
   semi: true,
-  singleQuote: true,
+  singleQuote: false,
   quoteProps: 'as-needed',
   jsxSingleQuote: false,
   trailingComma: 'all',
   bracketSpacing: true,
   bracketSameLine: false,
   arrowParens: 'always',
-  singleAttributePerLine: false
-}
-
-module.exports = prettierConfig;
+  singleAttributePerLine: false,
+};
