@@ -1,5 +1,5 @@
 {
-  "name": "config",
+  "name": "@solarcommerce/config",
   "version": "0.0.1",
   "description": "Solar Commerce config for different tools",
   "main": "dist/index.js",
