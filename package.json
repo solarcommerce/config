@@ -1,7 +1,7 @@
 {
   "name": "@solarcommerce/config",
-  "version": "0.0.1",
-  "description": "Solar Commerce configs for different tools",
+  "version": "0.0.2",
+  "description": "Solar Commerce configs for various tools such as Prettier, ESLint, Stylelint, etc.",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
