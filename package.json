@@ -1,14 +1,33 @@
 {
   "name": "@solarcommerce/config",
   "version": "0.0.1",
-  "description": "Solar Commerce config for different tools",
-  "main": "prettier.js",
-  "scripts": {},
+  "description": "Solar Commerce configs for different tools",
+  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c"
+  },
   "repository": {
     "type": "git",
     "url": "ssh://git@git.jetbrains.space/solarcommerce/main/config.git"
   },
-  "keywords": [],
+  "keywords": [
+    "solarcommerce"
+  ],
   "author": "Solar Commerce",
-  "license": "ISC"
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "prettier": "^3.0.3",
+    "rollup": "^4.1.4",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
 }

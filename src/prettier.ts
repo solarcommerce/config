@@ -1,4 +1,6 @@
-module.exports = {
+import { type Config as PrettierConfig } from 'prettier';
+
+const config: PrettierConfig = {
   printWidth: 120,
   tabWidth: 2,
   useTabs: false,
@@ -11,4 +13,6 @@ module.exports = {
   bracketSameLine: false,
   arrowParens: 'always',
   singleAttributePerLine: false,
-};
+}
+
+export default config;
