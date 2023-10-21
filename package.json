@@ -12,7 +12,7 @@
     "format:check": "prettier --check .",
     "format": "prettier --write .",
     "build": "npm run build:rollup",
-    "build:rollup": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript"
+    "build:rollup": "rollup -c"
   },
   "repository": {
     "type": "git",
