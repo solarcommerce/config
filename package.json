@@ -1,18 +1,15 @@
 {
   "name": "@solarcommerce/config",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Solar Commerce configs for various tools such as Prettier, ESLint, Stylelint, etc.",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "format:check": "prettier --check .",
     "format": "prettier --write .",
-    "build": "npm run build:rollup",
-    "build:rollup": "rollup -c"
+    "build:setup": "node scripts/setup.js",
+    "build:rollup": "rollup -c",
+    "build": "npm run build:setup && npm run build:rollup"
   },
   "repository": {
     "type": "git",
