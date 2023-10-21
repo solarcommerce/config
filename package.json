@@ -1,6 +1,6 @@
 {
   "name": "@solarcommerce/config",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Solar Commerce configs for various tools such as Prettier, ESLint, Stylelint, etc.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -24,10 +24,24 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-typescript": "^11.1.5",
-    "prettier": "^3.0.3",
+    "@types/eslint": "^8.44.6",
     "rollup": "^4.1.4",
     "rollup-plugin-dts": "^6.1.0",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "prettier": ">= 3",
+    "eslint": ">= 3",
+    "@next/eslint-plugin-next": ">= 13",
+    "@typescript-eslint/eslint-plugin": ">= 5",
+    "@typescript-eslint/parser": ">= 5",
+    "eslint-config-airbnb": ">= 19",
+    "eslint-config-airbnb-typescript": ">= 17",
+    "eslint-config-prettier": ">= 8",
+    "eslint-plugin-import": ">= 2",
+    "eslint-plugin-jsx-a11y": ">= 6",
+    "eslint-plugin-react": ">= 7",
+    "eslint-plugin-react-hooks": ">= 4"
   }
 }

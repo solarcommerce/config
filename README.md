@@ -23,14 +23,23 @@ const config = require('@solarcommerce/config');
 module.exports = config.prettier;
 ```
 
-## Configs
+### ESLint (Next.js)
+
+```javascript
+// .eslintrc.js
+
+const config = require('@solarcommerce/config');
+module.exports = config.eslint.nextjs;
+```
+
+## Config files
 
 If you do not want to install our package or need configuration for a single tool, below we provide ready-made files that you can copy straight to your project.
 
-### prettier.config.js
+### *prettier.config.js*
 
 ```javascript
-const config = {
+module.exports = {
   printWidth: 120,
   tabWidth: 2,
   useTabs: false,
@@ -44,6 +53,37 @@ const config = {
   arrowParens: 'always',
   singleAttributePerLine: false,
 };
+```
 
-export default config;
+### *.eslintrc.js (Next.js)*
+
+```javascript
+module.exports = {
+  root: true,
+  extends: [
+    'airbnb',
+    'airbnb-typescript',
+    'airbnb/hooks',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    'plugin:@next/next/recommended',
+    'prettier',
+  ],
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    project: ['./tsconfig.json'],
+  },
+  plugins: ['@typescript-eslint'],
+  rules: {
+    'react/react-in-jsx-scope': 'off',
+    'react/prop-types': 'off',
+    'react/require-default-props': 'off',
+    'no-void': ['error', { allowAsStatement: true }],
+  },
+};
 ```
