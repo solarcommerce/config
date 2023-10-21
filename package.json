@@ -16,7 +16,8 @@
     "url": "ssh://git@git.jetbrains.space/solarcommerce/main/config.git"
   },
   "keywords": [
-    "solarcommerce"
+    "solarcommerce",
+    "config"
   ],
   "author": "Solar Commerce",
   "license": "MIT",
