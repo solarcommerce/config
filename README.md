@@ -43,7 +43,7 @@ const config = {
   bracketSameLine: false,
   arrowParens: 'always',
   singleAttributePerLine: false,
-}
+};
 
 export default config;
 ```
